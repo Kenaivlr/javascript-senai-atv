@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button{
+  cursor: pointer;
+}
+
+
+body {
+  background-image: url(binary\ code.gif);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container{
+  background-color: rgba(4, 58, 37, 0.452);
+  width: 70%;
+  max-width: 1200px;
+
+  border: 2px solid #fff;
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 0 2px 2px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;;
+}
+
+.questions-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.question{
+  font-size: 24px;
+  text-align: center;
+}
+
+.answers-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.answer{
+  position: relative;
+  font-size: 35px;
+  width: 400px;
+  height: 320px;
+  margin: 35px;
+  box-shadow: 20px 20px 50px rgba(7, 7, 7, 0.5);
+  border-radius: 20px;
+  background: rgba(4, 92, 23, 0.37);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+  color: #fff;
+}
+
+.answer :disabled{
+  cursor: not-allowed
+}
+
+.controls-container{
+  margin-top: 5px;
+  width: 215px;
+  height: 25px;
+}
+
+.start-quiz{
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(4, 92, 23, 0.514);;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 24px;
+}
+
+.next-question{
+  cursor: pointer;
+  background-color: rgba(4, 92, 23, 0.514);;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.hide{
+  display: none;
+}
+
+.correct{
+  background-color: #1ea70270;
+}
+
+.incorrect{
+  background-color: #ca010170;
+}
+
+.refazer{
+    cursor: pointer;
+    background-color: rgba(4, 92, 23, 0.514);;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.sound-controls {
+  margin-top: -900px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sound-controls button {
+  cursor: pointer;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgba(4, 92, 23, 0.7);
+  color: #fff;
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+
+.sound-controls button:hover {
+  transform: scale(1.1);
+  background-color: rgba(4, 92, 23, 1);
+}
+
+.final-message{
+font-size: 30px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu do Jogo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="wrap">
+    <div class="card" role="application" aria-label="Menu do jogo">
+      <div class="topbar">
+        <div class="logo" aria-hidden="true">
+          <div class="mark"></div>
+          <div class="title">Noite do Quiz</div>
+        </div>
+        <div class="actions">
+          <button id="themeBtn" class="iconbtn" aria-label="Alternar tema">🌗 Tema</button>
+          <button id="muteBtn" class="iconbtn" aria-label="Alternar som">🔊 Som</button>
+          <button id="settingsBtn" class="iconbtn" aria-haspopup="dialog" aria-controls="optModal">⚙️ Opções</button>
+        </div>
+      </div>
+
+      <div class="content">
+        <section class="hero" aria-label="Destaque">
+          <h1>Pronto para jogar?</h1>
+          <p>Use <span class="kbdkey">↑</span>/<span class="kbdkey">↓</span> para navegar e <span class="kbdkey">Space</span> para selecionar.</p>
+        </section>
+
+        <nav class="menu" aria-label="Menu principal">
+          <a href="Quiz.html" class="btn menu-item" data-action="start"><span>▶️ Começar jogo!</span> <span class="kbd">Enter</span></a>
+          <button class="btn menu-item" data-action="settings">⚙️ Opções</button>
+          <button class="btn menu-item" data-action="credits">👁️ Créditos</button>
+          <button class="btn menu-item" data-action="quit">🚪 Sair</button>
+        </nav>
+      </div>
+
+      <div class="section">
+        <div>
+          <strong>Dica:</strong> você pode alterar o volume e a dificuldade em <em>Opções</em>.
+        </div>
+        <small>v1.0 • salvo localmente</small>
+      </div>
+
+      <div class="footer">Feito com ♥ apenas para demonstração.</div>
+    </div>
+  </div>
+
+  <!-- CAIXA DE OPÇÕES: Opções -->
+  <dialog id="optModal" class="modal" aria-label="Opções">
+    <form method="dialog">
+      <div class="hdr">
+        <strong>Opções</strong>
+        <button class="pill" value="close" aria-label="Fechar">✖</button>
+      </div>
+      <div class="body">
+        <div class="row">
+          <label for="vol">Volume</label>
+          <div class="f">
+            <input id="vol" type="range" min="0" max="100" step="1" />
+            <output id="volOut">50</output>
+          </div>
+        </div>
+        <div class="row">
+          <label for="diff">Dificuldade</label>
+          <div class="f">
+            <select id="diff">
+              <option value="easy">Fácil</option>
+              <option value="normal" selected>Normal</option>
+              <option value="hard">Difícil</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <label class="f">
+            <input id="tips" type="checkbox" checked>
+            Mostrar dicas durante o jogo
+          </label>
+        </div>
+      </div>
+      <div class="foot">
+        <button class="pill" value="cancel">Cancelar</button>
+        <button id="saveOptions" class="pill acc" value="confirm">Salvar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- MODAL: Créditos -->
+  <dialog id="credModal" class="modal" aria-label="Créditos">
+    <form method="dialog">
+      <div class="hdr">
+        <strong>Créditos</strong>
+        <button class="pill" value="close" aria-label="Fechar">✖</button>
+      </div>
+      <div class="body credits">
+        <p><strong>Noite do Quiz</strong> — Menu demo em HTML/CSS/JS.</p>
+        <p>Design e código: Kalil, Vitoria, Nicole, Kawa, Caio 👩‍💻👨‍💻<br> Tipografia: Outfit (Google Fonts)</p>
+        <p>Este projeto salva preferências em <code>localStorage</code> apenas no seu navegador.</p>
+      </div>
+      <div class="foot">
+        <button class="pill acc" value="ok">Beleza!</button>
+      </div>
+    </form>
+  </dialog>
+  <audio id="uiClick" preload="auto">
+    <source src="data:audio/mp3;base64,//uQZAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAACcQCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" type="audio/mpeg">
+  </audio>
+  <audio id="bgMusic" autoplay loop>
+    <source src="music/Gauntlet musica.m4a" type="audio/mpeg">
+  </audio>
+  <script src="js/script.js"></script>
+</body>
+</html>
