@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleP.css">
+    <script src="js/scriptP.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container1">
+        <div class="NomeR">
+            <h3>Nome do restaurante</h3>
+        </div>
+        <div class="nomeP"> 
+            <input type="text" id="prato" placeholder="  Digite o nome do prato">
+        </div>
+        <div class="bntcontainer">
+            <button class="bnt" onclick="empilharPratos()">Colocar Prato No Menu </button>
+            <button class="bnt" onclick="desempilharPratos()">Retirar Prato Do Menu</button>
+            <button class="bnt" onclick="mostrarMenu()">Mostrar Pratos No Menu</button>
+        </div>
+        <div>
+            <ul id="Menu"></ul>
+        </div>  
+    </div>  
+</body>
+</html>

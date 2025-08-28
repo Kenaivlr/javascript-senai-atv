@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Bradley Hand, cursive, serif,cursive;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(90deg,rgba(114, 3, 3, 0.856) 0%, rgba(9, 124, 181, 0.39) 50%, rgba(114, 3, 3, 0.856) 100%);
+  background-size: cover ;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container{
+  width: 50vw;
+  height: 95vh;
+  background-color: linear-gradient(90deg,rgba(114, 3, 3, 0.856) 0%, rgba(9, 124, 181, 0.39) 50%, rgba(114, 3, 3, 0.856) 100%);
+  border: 2px solid #ffffff86;
+  box-shadow: 0 0 1px #000;
+  border-radius: 10px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.NomeNavegador{
+  position: absolute;
+  margin-top: -700px;
+  
+}
+h3{
+  font-size: 24px;
+  margin: 1px; 
+
+}
+
+.inputP{
+  position: absolute;
+  margin-top: -500px;
+}
+
+input{
+  width: 500px;
+  margin: 30px;
+  
+  padding: 10px;
+  border: 1px solid #00000063;
+  border-radius: 7px;
+  box-shadow: 0 0 2px 1px #000000c5;
+}
+
+.bntcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -400px;
+  position: absolute;
+
+}
+
+button{
+  background-color: rgba(9, 124, 181, 0.178);
+  width: 150px;
+  margin: 10px;
+  padding: 7px;
+  border: 1px solid #00000063;
+  border-radius: 7px;
+  box-shadow: 0 0 2px 1px #000000c5;
+  cursor: pointer;
+}
+
+.paginasContainer{
+  position: absolute;
+
+}
+
+ul{
+  margin: 50px;
+  font-size: 20px;
+}
+
+li{
+  background-color: rgba(9, 124, 181, 0.178);
+  height: 42px;
+  width: 170px;
+  margin: 15px;
+  padding: 20px;
+
+  border: 1px solid #0000007c;
+  border-radius: 7px;
+  box-shadow: 0 0 2px 1px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+  font-family: serif,cursive;
+}
+footer{
+  margin-top: 850px;
+  position: absolute;
+}
+
